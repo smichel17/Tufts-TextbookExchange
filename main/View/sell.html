@@ -1,1 +1,41 @@
-<!-- sell.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>  </title>
+		<link href='./StyleSheets/base.css' type='text/css' rel='stylesheet' />
+		<link href='./StyleSheets/base.css' type='text/css' rel='stylesheet' />
+		<link href='./StyleSheets/base.css' type='text/css' rel='stylesheet' />
+	</head>
+	<body>
+		<center>
+		<table  border='1' callpadding='2' cellspacing='0' style='text-align:center'>
+		<tr>
+			<td colspan='3'> Add Textbook Information </td>
+		</tr>
+		<tr>
+			<td> Department </td>
+			<td> Course # </td>
+			<td> Price </td>
+		</tr>
+		<tr>
+			<td> <input type='text' id='dept' value='' size='33' /> </td>
+			<td> <input type='text' id='course' value='' size='33' /> </td>
+			<td> <input type='text' id='price' value='' size='33' /> </td>
+		</tr>
+		<tr>
+			<td> Details </td>
+			<td colspan='2'> <input type='text' id='details' value='' size='200' /> </td>
+		</tr>
+		<tr>
+			<td> E-mail Address </td>
+			<td> <input type='text' id='email' value='' size='50' /> </td>
+			<td> 
+				<form method='post' action='/sell' class="button">
+					<input type='submit' value=' Submit '>
+				</form>
+			</td>
+		</tr>
+		</table>
+		</center>
+	</body>
+</html>
