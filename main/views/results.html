@@ -1,1 +1,79 @@
-<!-- results.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Textbook Results</title>
+        <link href='./styles/base.css' type='text/css' rel='stylesheet' />
+        <link href='./styles/layout.css' type='text/css' rel='stylesheet' />
+        <link href='./styles/skeleton.css' type='text/css' rel='stylesheet' />
+    </head>
+    <body>
+        <div class="super-container full-width">
+            <div class="container">         
+                <header>
+                    <div class="sixteen columns">
+                        <!-- Branding -->
+                        <div class="eight columns alpha">
+                            <h1 id="logo" style="margin-top: 20px; margin-bottom: 10px;">
+                                <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+                            </h1>
+                        </div>
+                    </div>
+                </header>
+                <hr class="large" style="margin:10px;">
+            </div>
+        </div>
+        <div class="container">
+            <div class="three columns sidebar">
+            <nav>
+                <ul>
+                    <li><strong><a href="/buy">Buy Textbooks</a></strong></li>
+                    <li><strong><a href="/sell">Sell Textbooks</a></strong></li>
+                    <li><strong><a href="/about">About TextEx</a></strong></li>
+
+                </ul>
+            </nav>
+            </div>
+
+<div class="container">
+<div class="four columns">
+                            <form method="POST" action="/results">
+                                <label for="regularInput">Regular Input</label>
+                                <input type="text" id="regularInput" />
+                                <label for="regularTextarea">Regular Textarea</label>
+                                <textarea id="regularTextarea"></textarea>
+                                <label for="selectList">Select List</label>
+                                <select id="selectList">
+                                    <option value="Option 1">Option 1</option>
+                                    <option value="Option 2">Option 2</option>
+                                    <option value="Option 3">Option 3</option>
+                                    <option value="Option 4">Option 4</option>
+                                </select>
+                                <fieldset>
+                                    <legend>Checkboxes</legend>
+                                    <label for="regularCheckbox">
+                                        <input type="checkbox" id="regularCheckbox" value="checkbox 1" />
+                                        <span>Regular Checkbox</span>
+                                    </label>
+                                    <label for="secondRegularCheckbox">
+                                        <input type="checkbox" id="secondRegularCheckbox" value="checkbox 2" />
+                                        <span>Regular Checkbox</span>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Radio Buttons</legend>
+                                    <label for="regularRadio">
+                                        <input type="radio" name="radios" id="regularRadio" value="radio 1" />
+                                        <span>Regular Radio</span>
+                                    </label>
+                                    <label for="secondRegularRadio">
+                                        <input type="radio" name="radios" id="secondRegularRadio" value="radio 2" />
+                                        <span>Regular Radio</span>
+                                    </label>
+                                </fieldset>
+                                <button type="submit">Submit Form</button>
+                            </form>
+                        </div>
+                    </div>
+                        </div><!-- container -->
+    </body>
+</html>

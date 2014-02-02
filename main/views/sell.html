@@ -1,41 +1,64 @@
-<!DOCTYPE hsml>
-s
+<!DOCTYPE html>
+<html>
 	<head>
-		<title>  </title>
+		<title>Sell Textbooks</title>
 		<link href='./styles/base.css' type='text/css' rel='stylesheet' />
-		<link href='./styles/base.css' type='text/css' rel='stylesheet' />
-		<link href='./styles/base.css' type='text/css' rel='stylesheet' />
+		<link href='./styles/layout.css' type='text/css' rel='stylesheet' />
+		<link href='./styles/skeleton.css' type='text/css' rel='stylesheet' />
 	</head>
 	<body>
-		<center>
-		<table  border='1' callpadding='2' cellspacing='0' style='text-align:center'>
-		<tr>
-			<td colspan='3'> Add Textbook Information </td>
-		</tr>
-		<tr>
-			<td> Department </td>
-			<td> Course # </td>
-			<td> Price </td>
-		</tr>
-		<tr>
-			<td> <input type='text' id='dept' value='' size='33' /> </td>
-			<td> <input type='text' id='course' value='' size='33' /> </td>
-			<td> <input type='text' id='price' value='' size='33' /> </td>
-		</tr>
-		<tr>
-			<td> Details </td>
-			<td colspan='2'> <input type='text' id='details' value='' size='200' /> </td>
-		</tr>
-		<tr>
-			<td> E-mail Address </td>
-			<td> <input type='text' id='email' value='' size='50' /> </td>
-			<td> 
-				<form method='post' action='/sell' class="button">
-					<input type='submit' value=' Submit '>
+		<div class="super-container full-width">
+			<div class="container">			
+				<header>
+					<div class="sixteen columns">
+						<!-- Branding -->
+						<div class="eight columns alpha">
+							<h1 id="logo" style="margin-top: 20px; margin-bottom: 10px;">
+								<a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+							</h1>
+						</div>
+					</div>
+				</header>
+				<hr class="large" style="margin:10px;">
+			</div>
+		</div>
+		<div class="container">
+			<div class="three columns sidebar">
+				<nav>
+					<ul>
+						<li><strong><a href="/buy">Buy Textbooks</a></strong></li>
+						<li><strong><a href="/sell">Sell Textbooks</a></strong></li>
+						<li><strong><a href="/about">About TextEx</a></strong></li>
+
+					</ul>
+				</nav>
+			</div>
+			<div class="thirteen columns">
+				<form method="POST" action="/sell">	
+					
+					<h3>Sell Form</h3>						
+					<label for="regularInput">Department (Abreviation)</label>
+					<input type="text" name="department" />
+
+					<label for="regularInput">Course Number</label>
+					<input type="text" name="course_number" />
+
+					<label for="regularInput">Asking Price ($)</label>
+					<input type="text" name="price"/>
+					
+					<label for="regularInput">Email</label>
+					<input type="text" name="email"/>
+
+					<br>
+
+					<label for="regularTextarea">Book Condition (Optional)</label>
+					<textarea name="description"></textarea>
+
+					<br>
+					
+					<button type="submit">Submit Form</button>
 				</form>
-			</td>
-		</tr>
-		</table>
-		</center>
+			</div>
+		</div>
 	</body>
 </html>
