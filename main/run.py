@@ -72,8 +72,9 @@ def show_results():
     global user_dep
     global user_num
     c = offersdb.cursor()
-
-    c.execute("SELECT id, department, course_number, price, description FROM offers WHERE department LIKE \'%"+user_dep+"%\' AND course_number LIKE \'%"+user_num+"%\' ORDER BY price DESC")
+    int_user_num = int(user_num)
+    string_user_num = str(int_user_num)
+    c.execute("SELECT id, department, course_number, price, description FROM offers WHERE department LIKE \'%"+user_dep+"%\' AND course_number LIKE \'%"+string_user_num+"%\' ORDER BY price DESC")
     data=c.fetchall()
     c.close()
     output = template('views/results', rows=data)
