@@ -37,14 +37,9 @@ def get_sell():
     course_number=request.forms.get('course_number')
 
     c = offersdb.cursor()
-    c.execute("SELECT id, department, course_number, price, description, email FROM offers")
-    data = c.fetchone()
-    data[0]=department
-    data[1]=course_number
-    data[2]=price
-    data[3]=description
-    data[4]=email
+    c.execute("INSERT INTO offers (department,course_number, price, description, email) VALUES ('"+department+"', '"+course_number+"', '"+price+"', '"+description+"', '"+str(email)+"')")
     c.close()
+    redirect("/")
 
 @get('/buy')
 def show_buy():
