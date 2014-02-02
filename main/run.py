@@ -114,6 +114,7 @@ def get_confirm():
     c = offersdb.cursor()
     c.execute("DELETE FROM offers WHERE id = "+user_id)
     c.close()
+    redirect("/")
 
 @route('/styles/<filename>')    
 def show_sell_css(filename):
