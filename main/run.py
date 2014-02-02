@@ -1,4 +1,4 @@
-from bottle import run, route
+from bottle import run, route, static_file
 import bottle.ext.sqlite, sqlite3
 
 
@@ -9,23 +9,10 @@ c.execute("SELECT id, department, course_number, price, description, email FROM 
 data = c.fetchall()
 c.close()
     
-print(data[0][4])
-
 @route('/')
-def show_picnic():
-    print("hello")
-
-    db = sqlite3.connect('models/picnic.db')
-    c = db.cursor()
-    c.execute("SELECT item,quant FROM picnic")
-    data = c.fetchall()
-    c.close()
-    
-    output = template("views/make_table", rows=data)
-
-
-    return output
+def show_index():
+    return static_file('index.html', root="/views")
 
 
 
-#run(host='localhost', port=8080)
+run(host='localhost', port=8080)
