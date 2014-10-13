@@ -11,10 +11,10 @@ of the google doc.
 - make homepage \buy
 - Have professional aesthetic feel
   + have full about page
-    - contact info
-    - picture of team
-    - each team member
-    - legal disclaimer?
+    * contact info
+    * picture of team
+    * each team member
+    * legal disclaimer?
   + have multiple colours
   + add icon (favicon) to tab
 - buy domain name
