@@ -11,18 +11,18 @@ of the google doc.
 - make homepage \buy
 - Have professional aesthetic feel
         + have full about page
-		- contact info
-		- picture of team
-		- each team member
-		- legal disclaimer?
-	+ have multiple colours
-	+ add icon (favicon) to tab
+                - contact info
+                - picture of team
+                - each team member
+                - legal disclaimer?
+        + have multiple colours
+        + add icon (favicon) to tab
 - buy domain name
 - host site
-	+ tuftstextex.com
+        + tuftstextex.com
 - switch database to full version? (sqlite might not work)
 - fix bugs
-	+ empy form crashes in buy page
+        + empy form crashes in buy page
 
 TODO for version  0.20
 ======================
