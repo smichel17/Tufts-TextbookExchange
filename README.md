@@ -1,3 +1,6 @@
+Note: This software was written at the Tufts spring 2014 hackathon. It is not fully functional. A fully functional and re-designed complete rewrite of the site is under development (currently in a private repo); no release date set. As of 2015-3-5.
+
+
 Tufts-TextbookExchange
 ======================
 This app is used to facilitate textbook exchanges between tufts students.
